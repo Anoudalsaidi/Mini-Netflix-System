@@ -44,7 +44,7 @@ class WatchSession
         MovieTitle = movieTitle;
     }
 }
-// ===================== User Class =====================
+// =================== User Class =====================
 class User
 {
     public string Name { get; set; }
