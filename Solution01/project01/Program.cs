@@ -68,7 +68,7 @@ class User
 
     public void RateMovie(Movie movie, int rate)
     {
-        // Bonus: prevent rating before watching
+        // prevent rating before watching
         if (!watchedMovies.Contains(movie.Title))
         {
             Console.WriteLine("You must watch the movie before rating it!");
