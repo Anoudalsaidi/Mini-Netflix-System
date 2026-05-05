@@ -96,8 +96,21 @@ class User
     }
 }
 
+// ===================== Main =====================
+class Program
+{
+    static void Main(string[] args)
+    {
+        Movie m1 = new Movie("Inception", "Sci-Fi", 9);
+        User u1 = new User("Ali");
 
+        u1.WatchMovie(m1);
+        u1.RateMovie(m1, 10);
 
-
+        u1.PrintWatchedMovies();
     }
+
+
+
+}
 }
