@@ -27,7 +27,7 @@ namespace MiniNetflix
             {
                 Title = title;
                 Genre = genre;
-                Rating = rating; // uses validation
+                Rating = rating; // > uses validation
             }
         }
     }
