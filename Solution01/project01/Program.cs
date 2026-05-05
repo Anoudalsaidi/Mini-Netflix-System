@@ -85,7 +85,7 @@ class User
         Console.WriteLine($"{Name} rated {movie.Title} = {rate}");
     }
 
-    // Bonus: print watched movies
+    // print watched movies
     public void PrintWatchedMovies()
     {
         Console.WriteLine($"{Name}'s watched movies:");
