@@ -44,7 +44,57 @@ class WatchSession
         MovieTitle = movieTitle;
     }
 }
+// ===================== User Class =====================
+class User
+{
+    public string Name { get; set; }
 
+    public int WatchCount { get; private set; } = 0;
+
+    private List<string> watchedMovies = new List<string>();
+
+    public User(string name)
+    {
+        Name = name;
+    }
+
+    public void WatchMovie(Movie movie)
+    {
+        WatchCount++;
+        watchedMovies.Add(movie.Title);
+
+        Console.WriteLine($"{Name} is watching {movie.Title}");
+    }
+
+    public void RateMovie(Movie movie, int rate)
+    {
+        // Bonus: prevent rating before watching
+        if (!watchedMovies.Contains(movie.Title))
+        {
+            Console.WriteLine("You must watch the movie before rating it!");
+            return;
+        }
+
+        if (rate < 1 || rate > 10)
+        {
+            Console.WriteLine("Invalid rate! Must be between 1 and 10.");
+            return;
+        }
+
+        movie.Rating = rate;
+        Console.WriteLine($"{Name} rated {movie.Title} = {rate}");
+    }
+
+    // Bonus: print watched movies
+    public void PrintWatchedMovies()
+    {
+        Console.WriteLine($"{Name}'s watched movies:");
+        foreach (var movie in watchedMovies)
+        {
+            Console.WriteLine("- " + movie);
+        }
+    }
+}
 
 
 
