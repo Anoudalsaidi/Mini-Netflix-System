@@ -32,7 +32,7 @@ namespace MiniNetflix
         }
     }
 
-// ===================== WatchSession Class =====================
+// ================= WatchSession Class =====================
 class WatchSession
 {
     public string UserName { get; set; }
