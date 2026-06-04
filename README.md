@@ -36,30 +36,6 @@ The project focuses on delivering an intuitive UI, efficient content management,
 
 ---
 
-## 📸 Screenshots
-
-### Home Page
-
-![Home](screenshots/home.png)
-
-### Browse Movies
-
-![Movies](screenshots/movies.png)
-
-### Movie Details
-
-![Details](screenshots/details.png)
-
-### Video Player
-
-![Player](screenshots/player.png)
-
-### Admin Dashboard
-
-![Dashboard](screenshots/dashboard.png)
-
----
-
 ## 🏗️ System Architecture
 
 ```text
